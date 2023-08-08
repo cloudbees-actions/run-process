@@ -2,7 +2,7 @@
 ## Description
 This is one of several GitHub Actions provided on an "as-is" basis by CloudBees that enable users to write GitHub Action Workflows that send work to an external CloudBees CD/RO instance. This Action enables workflows to run an existing Application Process on a remote CloudBees CD/RO instance.
 ## Intended audience
-For teams utilizing GitHub Actions for build and continuous integration, the CloudBees CD/RO Actions provide a mechanism for releasing software in a secure, governed, and auditable manner with deep visibility as is required in regulated industries, for example. Platform or shared services teams can build reusable content in the CloudBees CD/RO platform that conforms to company standards and removes the burden of release automation from the application teams.
+For teams utilizing GitHub Actions for build and continuous integration, the CloudBees CD/RO Actions provide a mechanism for releasing software in a secure, governed, and auditable manner with deep visibility, as is required in regulated industries, for example. Platform or shared services teams can build reusable content in the CloudBees CD/RO platform that conforms to company standards and removes the burden of release automation from the application teams.
 ## Prerequisites
 CloudBees CD/RO is an enterprise "on-premise" product that automates software delivery processes, including production deployments and releases. To use utilize this GitHub Action, it is necessary to have access to a CloudBees CD/RO instance, in particular, 
 - A CloudBees CD/RO instance that GitHub Actions can access through REST calls (TCP port 443)
@@ -118,5 +118,5 @@ jobs:
 ## License
 The scripts and documentation in this project are released under the MIT License.
 ## Documentation
-For further details on the CloudBees CD/RO product, refer to the [online documentation](https://docs.cloudbees.com/docs/cloudbees-cd/latest/).
+For more details about the CloudBees CD/RO product, view the [online documentation](https://docs.cloudbees.com/docs/cloudbees-cd/latest/).
 
