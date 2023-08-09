@@ -6,7 +6,7 @@ For teams utilizing GitHub Actions for build and continuous integration, the Clo
 ## Prerequisites
 CloudBees CD/RO is an enterprise "on-premise" product that automates software delivery processes, including production deployments and releases. To use utilize this GitHub Action, it is necessary to have access to a CloudBees CD/RO instance, in particular, 
 - A CloudBees CD/RO instance that GitHub Actions can access through REST calls (TCP port 443)
-- A valid API token for the CloudBees CD/RO instance. A token can be generated from the _Access Token_ link on the user profile page of the CloudBees CD/RO user interface; see [Manage access tokens via the UI](https://docs.beescloud.com/docs/cloudbees-cd/latest/intro/sign-in-cd#_manage_access_tokens_via_the_ui) documentation for details.
+- A valid API token for the CloudBees CD/RO instance. A token can be generated from the _Access Token_ link on the user profile page of the CloudBees CD/RO user interface; see [Manage access tokens via the UI](https://docs.cloudbees.com/docs/cloudbees-cd/latest/intro/sign-in-cd#_manage_access_tokens_via_the_ui) documentation for details.
 These values should be stored as GitHub Action secrets to be referenced securely in a GitHub Actions workflow.
 ## Usage
 The CloudBees CD/RO GitHub Actions are called from _steps_ in a GitHub Actions _workflow_. The following workflow extract illustrates how to run an existing Application Process on a remote CloudBees CD/RO instance, including _actual parameters_.
