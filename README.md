@@ -36,6 +36,10 @@ steps:
 | environmentName        | Environment name                                                       | yes      |
 | environmentProjectName | Project name of the environment                                        | yes      |
 | ignore-unverified-cert | Ignore unverified SSL certificate                                      | no       |
+### Outputs
+| Name                   | Description                                                            |
+|------------------------|------------------------------------------------------------------------|
+| response               | The JSON data structure emited by the API call. This data can be parsed to retrieve individual values from the response, for example, `${{ fromJson(steps.start-release.outputs.response).flowRuntime.flowRuntimeId }}` where `start-release` is the name of a previous step and `.flowRuntime.flowRuntimeId` is the selector for the release pipeline runtime ID. |
 ### Secrets and Variables
 The following GitHub secrets are needed to run the Action. These can be set in the _Secrets and variable_ section of the workflow repository _Settings_ tab.
 | Name                   | Description                                                            | Required |
