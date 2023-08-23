@@ -23,7 +23,7 @@ runs:
   steps:
     - name: runProcess API
       id: run-process
-      uses: cloudbees-actions/eval-dsl@v1
+      uses: cloudbees-github-actions/eval-dsl@v1
       with:
         dsl: runProcess args
         dsl-args: |
@@ -34,7 +34,7 @@ runs:
         dsl-actual-parameter: ${{ inputs.actualParameter }}
             
     - name: Attach action meta data to runtime object
-      uses: cloudbees-actions/eval-dsl@v1
+      uses: cloudbees-github-actions/eval-dsl@v1
       with:
         dsl: |
           def jobId = "${{ fromJson(steps.run-process.outputs.response).jobId }}"
