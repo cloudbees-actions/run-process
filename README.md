@@ -119,6 +119,8 @@ jobs:
             Input3: "line1\nline2"
 ```
 4. Go to the GitHub `Actions` tab and run the workflow `Create and run process`
+## Sample build and release repository
+The [CloudBees CD/RO GitHub Actions Demonstration Repository](https://github.com/cloudbees-demos/gh-actions-demo) illustrates how to implement a build and release workflow with the CloudBees CD/RO GitHub Actions.
 ## License
 The scripts and documentation in this project are released under the MIT License.
 ## Documentation
