@@ -1,5 +1,8 @@
 name: 'Run CD/RO process'
 description: Start a process on a remote CloudBees CD/RO instance
+branding:
+  icon: 'command'
+  color: 'blue'
 
 inputs:
   projectName:
