@@ -39,6 +39,7 @@ runs:
           processName: ${{ inputs.processName }}
           environmentName: ${{ inputs.environmentName }}
         dsl-actual-parameter: ${{ inputs.actualParameter }}
+        ignore-unverified-cert: ${{ inputs.ignore-unverified-cert }}
             
     - name: Attach action meta data to runtime object
       uses: cloudbees-github-actions/eval-dsl@v1
@@ -50,3 +51,4 @@ runs:
           setProperty jobId: jobId,
             propertyName: "/myJob/report-urls/GitHub Actions Workflow URL",
             value: "https://github.com/${repository}/actions/runs/${run_id}"
+        ignore-unverified-cert: ${{ inputs.ignore-unverified-cert }}
