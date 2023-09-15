@@ -20,6 +20,10 @@ inputs:
   actualParameter:
     description: Actual parameters to pass to the process
     required: false
+  ignore-unverified-cert:
+    description: Ignore unverified SSL certificate errors when connecting to CloudBees CD/RO instance
+    default: 'false'
+    required: false
   
 runs:
   using: "composite"
